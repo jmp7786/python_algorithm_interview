@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/gas-station/
+# 1번은 타임 아웃 발생 2번으로 풀어라
 
 from typing import List
 
