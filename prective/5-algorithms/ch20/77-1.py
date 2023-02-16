@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/longest-repeating-character-replacement/
-# 이건 오히려 이해가 잘 안되네
+# 이건 이해가 잘 안되네
 
 import collections
 
@@ -18,3 +18,6 @@ class Solution:
                 counts[s[left]] -= 1
                 left += 1
         return right - left
+
+result = Solution().characterReplacement("ABAB", 2)
+print(result)
