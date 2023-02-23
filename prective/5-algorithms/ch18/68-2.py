@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
-
+# 시간 복잡도는 어떻게 되는가?
 from typing import List
 
 
