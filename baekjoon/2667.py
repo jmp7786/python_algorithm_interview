@@ -70,7 +70,6 @@ def findHouses(s):
 
         global count
         count = count + 1
-        print(count)
         return True
 
     result = []
