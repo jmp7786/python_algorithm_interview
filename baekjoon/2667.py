@@ -54,10 +54,33 @@ import collections
 
 count = 0
 
+class House:
+    count = 1
+    def findHouses(self, s):
+        result = []
+        for i in range(len(s)):
+            for j in range(len(s[0])):
+                if self.__dfs(s, i, j):
+                    result.append(count)
+                    self.count = 0
+
+        return sorted(result)
+    def __dfs(self, s,i, j):
+        if i < 0 or i > len(s) - 1 or j < 0 or j > len(s[0]) - 1 or s[i][j] != 1:
+            return False
+
+        s[i][j] = 0
+        self.__dfs(s, i - 1, j)
+        self.__dfs(s, i + 1, j)
+        self.__dfs(s, i, j - 1)
+        self.__dfs(s, i, j + 1)
+
+        self.count += 1
+        return True
+
 
 def findHouses(s):
-    global count
-
+    count = 1
     def dfs(s, i, j):
         if i < 0 or i > len(s) - 1 or j < 0 or j > len(s[0]) - 1 or s[i][j] != 1:
             return False
@@ -68,7 +91,6 @@ def findHouses(s):
         dfs(s, i, j - 1)
         dfs(s, i, j + 1)
 
-        global count
         count = count + 1
         return True
 
@@ -148,3 +170,41 @@ cnt.sort()
 print(len(cnt))
 for i in range(len(cnt)):
     print(cnt[i])
+
+
+class House:
+    count = 0
+
+    def findHouses(self, s):
+        result = []
+        for i in range(len(s)):
+            for j in range(len(s[0])):
+                if self.__dfs(s, i, j):
+                    result.append(self.count)
+                    self.count = 0
+
+        return sorted(result)
+
+    def __dfs(self, s, i, j):
+        if i < 0 or i > len(s) - 1 or j < 0 or j > len(s[0]) - 1 or s[i][j] != '1':
+            return False
+
+        s[i][j] = 0
+        self.count += 1
+
+        self.__dfs(s, i - 1, j)
+        self.__dfs(s, i + 1, j)
+        self.__dfs(s, i, j - 1)
+        self.__dfs(s, i, j + 1)
+
+
+        return True
+
+
+n = int(input())
+graph = []
+for i in range(n):
+    graph.append(list(map(int, input())))
+
+result = House().findHouses(graph)
+print(result)
