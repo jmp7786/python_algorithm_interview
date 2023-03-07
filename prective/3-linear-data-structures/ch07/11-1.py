@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/product-of-array-except-self/
+# 굉장히 좋은 문제다. n2으로 풀어야 하는 걸 n으로 줄이다니 특정한 경우에만 사용할 수 있는 건가?
 from typing import List
 
 

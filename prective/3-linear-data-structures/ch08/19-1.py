@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/reverse-linked-list-ii/
+# 중간의 리스트를 스왑하는 것은 어렵네
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
