@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/valid-parentheses/
+# 해쉬 테이블에 넣어서 조건식을 다 사용하지 않아도 되네
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
