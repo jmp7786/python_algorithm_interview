@@ -14,3 +14,4 @@ class Solution:
             used[char] = index
 
         return max_length
+

@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/subsets/
+# combination에서 스스로의 걍우의 수를 포함하면 i로 아니라면 i+1을 사용한다.
 from typing import List
 
 

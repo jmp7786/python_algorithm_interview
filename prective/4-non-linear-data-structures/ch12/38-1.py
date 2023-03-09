@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/reconstruct-itinerary/
+# 기존의 지식으로는 풀기 어렵다 연습하자.
+
 import collections
 from typing import List
 

@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/combination-sum/
+# 조합은 중복을 없애야 한다. 그러기 위해서는 반복문을 돌릴 경우 하위 원소만 돌리도록 해야한다.
 from typing import List
 
 

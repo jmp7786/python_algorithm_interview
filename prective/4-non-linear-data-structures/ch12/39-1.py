@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/course-schedule/
 import collections
 from typing import List
 
