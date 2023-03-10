@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-depth-of-binary-tree/
+# depth를 돌리는 것이 만만치가 않네? 감을 잃으면 풀 수 없다.
 import collections
 
 

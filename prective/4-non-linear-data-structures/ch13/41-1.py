@@ -1,6 +1,26 @@
+# https://leetcode.com/problems/cheapest-flights-within-k-stops/
+# 책에서 나온 해결방법으로는 해결이 안된다. TC가 추가되면서 막힌듯
 import collections
 import heapq
 from typing import List
+
+
+# 벨만 포드 알고리즘으로 푸는 방식으로 변경해야 한다.
+class Solution:
+    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+        prices = [float('inf')] * n
+        prices[src] = 0
+
+        for i in range(k + 1):
+            tmpPrices = prices[:]
+            for s, d, p in flights:
+                if prices[s] == float('inf'):
+                    continue
+                if prices[s] + p < tmpPrices[d]:
+                    tmpPrices[d] = prices[s] + p
+            prices = tmpPrices
+
+        return -1 if prices[dst] == float('inf') else prices[dst]
 
 
 class Solution:

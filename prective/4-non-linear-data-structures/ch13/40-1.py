@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/network-delay-time/
+# 난이도가 있다.
 import collections
 import heapq
 from typing import List

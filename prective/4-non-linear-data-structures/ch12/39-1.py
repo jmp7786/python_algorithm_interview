@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/course-schedule/
+# 2번을 풀어라
+# 아주 간단한 dfs 탐색 문제, 전방위를 탐색한다.
 import collections
 from typing import List
 

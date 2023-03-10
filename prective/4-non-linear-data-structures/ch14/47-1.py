@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+# 양은 많은데 생각보다 어렵지 않다.
 import collections
 
 

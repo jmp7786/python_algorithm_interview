@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# 시작 지점이 아주 센세이션하네?!
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         used = {}

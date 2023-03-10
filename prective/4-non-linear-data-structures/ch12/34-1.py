@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/permutations/
+# parmutation과 combination의 접근 방법이 조금 다르네
 from typing import List
 
 
