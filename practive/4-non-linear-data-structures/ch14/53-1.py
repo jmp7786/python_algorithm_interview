@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/minimum-distance-between-bst-nodes/
+# 순회 하는 게 생각보다 어렵네?
 import sys
 
 

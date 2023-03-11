@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/balanced-binary-tree/
+# 감이 없으면 풀기 쉽지 않다.
 
 # Definition for a binary tree node.
 class TreeNode:

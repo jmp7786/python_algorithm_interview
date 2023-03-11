@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/minimum-height-trees/
+# 어려운데? 접근 방식이 바로 떠올리기 쉽지 않다.
 import collections
 from typing import List
 

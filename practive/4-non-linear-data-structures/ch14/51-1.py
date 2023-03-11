@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
+# 에러가 났을 때 존재하지 않는 위치에서 Solution.py가 에러를 뱉으면? 무엇이 문제지?
 
 # Definition for a binary tree node.
 class TreeNode:
