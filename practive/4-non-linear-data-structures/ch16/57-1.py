@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/palindrome-pairs/
+# 스킵
 from typing import List
 
 
