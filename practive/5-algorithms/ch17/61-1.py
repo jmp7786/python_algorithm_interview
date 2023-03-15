@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/largest-number/
+# 일반 리시트에서 삽입정렬을 사용하는 방법. 좋다.
+# 이중 포문을 재미있게 돌리네
 from typing import List
 
 class Solution:
