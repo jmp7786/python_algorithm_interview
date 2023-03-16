@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/sort-colors/
-
+# 두 포인터가 만다는 지점에 디테일이 있네
 from typing import List
 
 

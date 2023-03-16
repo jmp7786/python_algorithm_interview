@@ -21,5 +21,3 @@ class Solution:
 
         return str(int(''.join(map(str, nums))))
 
-result = Solution().largestNumber([10,2])
-print(result)

@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/binary-search/
+# BS하는 것도 디테일을 잘 알아야 한다.
 from typing import List
 
 

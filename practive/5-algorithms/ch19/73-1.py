@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/utf-8-validation/
 # UTF-8을 검증하는 문제 UTF-8의 특성을 잘 알아야 한다. 이런 문제는 넘긴다.
 from typing import List
 

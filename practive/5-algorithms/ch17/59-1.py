@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/merge-intervals/
+# 소팅이 중요하구나
 from typing import List
 
 
