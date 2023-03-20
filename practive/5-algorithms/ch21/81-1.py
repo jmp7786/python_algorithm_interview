@@ -10,7 +10,7 @@ class Solution:
             fuel = 0
             for i in range(start, len(gas) + start):
                 index = i % len(gas)
-
+                print()
                 can_travel = True
                 if gas[index] + fuel < cost[index]:
                     can_travel = False

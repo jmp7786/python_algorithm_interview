@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/different-ways-to-add-parentheses
+# 오 쉽지 않은 문제다.
 from typing import List
 
 

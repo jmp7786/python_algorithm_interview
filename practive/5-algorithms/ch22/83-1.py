@@ -1,4 +1,6 @@
+# https://leetcode.com/problems/majority-element/
 # 3, 4번으로 풀이
+# 매우 쉽다.
 from typing import List
 
 
