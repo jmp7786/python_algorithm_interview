@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/queue-reconstruction-by-height/
-
+# sorting의 규칙의 영감을 찾는 것이 쉽지 않다.
 import heapq
 from typing import List
 
