@@ -20,4 +20,5 @@ def dfs():
             dfs()
             path.remove(str(i))
 
-dfs()
+# dfs()
+
