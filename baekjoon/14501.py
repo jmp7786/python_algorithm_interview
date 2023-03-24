@@ -1,23 +1,6 @@
 # https://www.acmicpc.net/problem/14501
 # 집도둑과 같은 유형의 문제이다.
 
-# 타뷸레이션(bottom-up)
-# import sys
-# N = int(input())
-#
-# schedule = [list(map(int, sys.stdin.readline().split())) for i in range(N)]
-#
-# dp = [0 for i in range(N+1)]
-#
-# for i in range(N):
-#     for j in range(i+schedule[i][0], N+1):
-#         if dp[j] < dp[i] + schedule[i][1]:
-#             dp[j] = dp[i] + schedule[i][1]
-#
-# print(dp[-1])
-#
-#
-# # 메모이제이션(top-down)
 N = int(input())
 li = [list(map(int, input().split())) for _ in range(N)]
 
