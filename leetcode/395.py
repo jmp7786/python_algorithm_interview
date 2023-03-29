@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/
+# 복습
 class Solution:
 	def longestSubstring(self, s: str, k: int) -> int:
 
@@ -9,10 +10,8 @@ class Solution:
 
 		# for all char from 1 to max_chars
 		for available_char in range(1,max_chars+1):
-
 			h = {}
 			i = j = 0
-
 
 			# simple sliding window approach
 			while(j < n):
