@@ -1,46 +1,23 @@
-# https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/
-# 복습
+import collections
+
+
 class Solution:
-	def longestSubstring(self, s: str, k: int) -> int:
+    def longestSubstring(self, s: str, k: int) -> int:
+        # If the length of the string is less than k, return 0
+        if len(s) < k:
+            return 0
 
-		# number of unique characters available
-		max_chars = len(set(s))
-		n = len(s)
-		ans = 0
+        # Count the frequency of each character in the string
+        counts = collections.Counter(s)
 
-		# for all char from 1 to max_chars
-		for available_char in range(1,max_chars+1):
-			h = {}
-			i = j = 0
+        # Find the index of the first character with a frequency less than k
+        for i, char in enumerate(s):
+            if counts[char] < k:
+                # Split the string into two parts and recursively find the longest substring in each part
+                left = self.longestSubstring(s[:i], k)
+                right = self.longestSubstring(s[i + 1:], k)
+                # Return the maximum length of the two substrings
+                return max(left, right)
 
-			# simple sliding window approach
-			while(j < n):
-
-				if(s[j] not in h):
-					h[s[j]] = 0
-				h[s[j]] += 1
-
-				# if len of h is less than no of available chars
-				if(len(h) < available_char):
-					j += 1
-
-				# if equal then check all have values >=k
-				elif(len(h) == available_char):
-					count = 0
-					for x in h.values():
-						if(x >= k):
-							count += 1
-					if(count == available_char):
-						ans = max(ans,j - i + 1)
-					j += 1
-
-				# if greater than remove from starting
-				else:
-					while(len(h) != available_char):
-						h[s[i]] -= 1
-						if(h[s[i]] == 0):
-							del h[s[i]]
-						i += 1
-					j += 1
-
-		return ans
+        # If all characters have a frequency greater than or equal to k, return the length of the string
+        return len(s)
