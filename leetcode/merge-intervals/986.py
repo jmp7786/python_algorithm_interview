@@ -18,7 +18,7 @@ class Solution:
                 res.append([l, r])
 
             if firstList[i][1] < secondList[j][1]:
-                i += 1ㅇ
+                i += 1
 
             else:
                 j += 1
