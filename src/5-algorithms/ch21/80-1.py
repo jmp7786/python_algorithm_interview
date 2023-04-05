@@ -15,7 +15,7 @@ class Solution:
                 result += 1
 
                 counter.subtract(task)
-                # 0 이하인 아이템을 목록에서 완전히 제거
+                # 0-1 knapsack 이하인 아이템을 목록에서 완전히 제거
                 counter += collections.Counter()
 
             if not counter:

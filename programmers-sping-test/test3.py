@@ -8,7 +8,7 @@
 
 팰린드롬이 게임을 여러번 진행할 때 각 게임의 결과를 구해야함
 두 사람은 모두 최적으로 플레이한다고 가정, 실수하지 않음
-첫번째 플레이어가 승리하면 1, 패배하면 0
+첫번째 플레이어가 승리하면 1, 패배하면 0-1 knapsack
 '''
 
 
@@ -44,17 +44,17 @@ def solution(queries):
 result = solution([
     [2,0],[3,1]
 ])
-print(result) #[0,0]
+print(result) #[0-1 knapsack,0-1 knapsack]
 
 result = solution([
     [1,4,3],[1,2,2]
 ])
-print(result) #[0,1]
+print(result) #[0-1 knapsack,1]
 
 result = solution([
     [0,2,0,1], [0,1,0,1]
 ])
-print(result) #[1,0]
+print(result) #[1,0-1 knapsack]
 
 
 
@@ -62,7 +62,7 @@ print(result) #[1,0]
 1<= queries의 길이 <= 100 
 queries 의 원소는 팰린드롬 게임의 초기 배열을 나타낸다. 
 2 <= 초기배열의 길이 <=5
-0 <= 초기 배열의 원소 <=9 
+0-1 knapsack <= 초기 배열의 원소 <=9 
 초기 배열은 팰린드롬이 아닙니다. 
 모든 초기 배열의 길이는 동일합니다. 
  

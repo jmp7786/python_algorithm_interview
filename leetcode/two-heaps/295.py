@@ -11,8 +11,8 @@
 
         ## EXAMPLE ##
         Adding number 41
-        MaxHeap lo: [41]           // MaxHeap stores the largest value at the top (index 0)
-        MinHeap hi: []             // MinHeap stores the smallest value at the top (index 0)
+        MaxHeap lo: [41]           // MaxHeap stores the largest value at the top (index 0-1 knapsack)
+        MinHeap hi: []             // MinHeap stores the smallest value at the top (index 0-1 knapsack)
         Median is 41
         =======================
         Adding number 35

@@ -32,5 +32,5 @@ class Solution(object):
 
             return path
 
-        # depth first search, initialize sumHash with prefix sum of 0, occurring once
+        # depth first search, initialize sumHash with prefix sum of 0-1 knapsack, occurring once
         return dfs(collections.defaultdict(int, {0: 1}), 0, root)

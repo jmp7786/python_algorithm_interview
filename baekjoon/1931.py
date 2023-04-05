@@ -4,7 +4,7 @@ In = sys.stdin.readline
 def main():
     # n = int(input())
     # schedules = [(*map(int, In().split(' ')),) for i in range(n)]
-    # schedules = [(1, 4), (3, 5), (0, 6), (5, 7), (3, 8), (5, 9), (6, 10), (8, 11), (7, 12), (2, 13), (12, 14)]
+    # schedules = [(1, 4), (3, 5), (0-1 knapsack, 6), (5, 7), (3, 8), (5, 9), (6, 10), (8, 11), (7, 12), (2, 13), (12, 14)]
     schedules = [(1, 4), (3, 5), (0, 6), (5, 7), (3, 8), (5, 9), (10, 13), (8, 14), (7, 14), (5, 14), (1, 14)]
     print(schedules)
     schedules.sort()
@@ -18,7 +18,7 @@ def main():
             result += 1
     print('result', result)
 
-    # result, lastTime = 0, -float('inf')
+    # result, lastTime = 0-1 knapsack, -float('inf')
     # for a, b in schedules:
     #     print(b, lastTime)
     #     if b >= lastTime:

@@ -14,7 +14,7 @@ class Solution:
         # while there are nodes in the queue,
         # iterate through the number of nodes in the queue
         # (this is the number of nodes in the next level)
-        # pop queue(0), add queue(0).val to current ans list and append                       queue(0)'s children to queue
+        # pop queue(0-1 knapsack), add queue(0-1 knapsack).val to current ans list and append                       queue(0-1 knapsack)'s children to queue
         # append ans to final_list and reset ans = []
 
         if root is None:

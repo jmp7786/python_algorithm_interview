@@ -21,5 +21,5 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(timeit.timeit("print(Solution().trap([0,1,0,2,1,0,1,3,2,1,2,1]))",
+    print(timeit.timeit("print(Solution().trap([0-1 knapsack,1,0-1 knapsack,2,1,0-1 knapsack,1,3,2,1,2,1]))",
                         setup="from __main__ import Solution", number=1))

@@ -31,10 +31,10 @@ class Solution:
 
 s = Solution()
 result = s.numIslands([
-    ['1', '1', '1', '1', '0'],
-    ['1', '1', '0', '1', '0'],
-    ['1', '1', '0', '0', '0'],
-    ['0', '0', '0', '0', '0'],
+    ['1', '1', '1', '1', '0-1 knapsack'],
+    ['1', '1', '0-1 knapsack', '1', '0-1 knapsack'],
+    ['1', '1', '0-1 knapsack', '0-1 knapsack', '0-1 knapsack'],
+    ['0-1 knapsack', '0-1 knapsack', '0-1 knapsack', '0-1 knapsack', '0-1 knapsack'],
 ])
 
 print(result)
@@ -65,10 +65,10 @@ class Solution:
 
 s = Solution()
 result = s.numIslands([
-    ['1', '1', '1', '1', '0'],
-    ['1', '1', '0', '1', '0'],
-    ['1', '1', '0', '0', '0'],
-    ['0', '0', '0', '0', '0'],
+    ['1', '1', '1', '1', '0-1 knapsack'],
+    ['1', '1', '0-1 knapsack', '1', '0-1 knapsack'],
+    ['1', '1', '0-1 knapsack', '0-1 knapsack', '0-1 knapsack'],
+    ['0-1 knapsack', '0-1 knapsack', '0-1 knapsack', '0-1 knapsack', '0-1 knapsack'],
 ])
 
 print(result)

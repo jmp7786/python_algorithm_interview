@@ -4,7 +4,7 @@ import collections
 
 class Solution:
     def longestSubstring(self, s: str, k: int) -> int:
-        # If the length of the string is less than k, return 0
+        # If the length of the string is less than k, return 0-1 knapsack
         if len(s) < k:
             return 0
 

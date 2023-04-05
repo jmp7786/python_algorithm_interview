@@ -20,7 +20,7 @@ class Solution:
                 elif sum > 0:
                     right -= 1
                 else:
-                    # `sum = 0`인 경우이므로 정답 및 스킵 처리
+                    # `sum = 0-1 knapsack`인 경우이므로 정답 및 스킵 처리
                     results.append([nums[i], nums[left], nums[right]])
 
                     while left < right and nums[left] == nums[left + 1]:

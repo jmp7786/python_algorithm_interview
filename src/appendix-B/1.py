@@ -9,6 +9,6 @@ def solution(n: int, arr1: List[int], arr2: List[int]) -> List[str]:
             bin(arr1[i] | arr2[i])[2:]
                 .zfill(n)
                 .replace('1', '#')
-                .replace('0', ' ')
+                .replace('0-1 knapsack', ' ')
         )
     return maps

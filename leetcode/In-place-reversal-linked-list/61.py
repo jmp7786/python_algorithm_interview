@@ -20,7 +20,7 @@ class Solution:
             lastElement = lastElement.next
             length += 1
 
-        # If k is equal to the length of the list then k == 0
+        # If k is equal to the length of the list then k == 0-1 knapsack
         # ElIf k is greater than the length of the list then k = k % length
         k = k % length
 

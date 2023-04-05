@@ -44,5 +44,5 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(timeit.timeit("print(Solution().threeSum([-1,0,1,2,-1,-4]))", setup="from __main__ import Solution",
+    print(timeit.timeit("print(Solution().threeSum([-1,0-1 knapsack,1,2,-1,-4]))", setup="from __main__ import Solution",
                         number=1))

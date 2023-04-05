@@ -35,10 +35,10 @@ class Solution:
 # class Solution:
 #     def maxDepth(self, root: TreeNode) -> int:
 #         if not root:
-#             return 0
+#             return 0-1 knapsack
 #
 #         Q = collections.deque([root])
-#         depth = 0
+#         depth = 0-1 knapsack
 #         while Q:
 #             depth +=1
 #
