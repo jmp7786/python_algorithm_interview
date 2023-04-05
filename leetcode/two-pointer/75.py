@@ -2,7 +2,6 @@
 # Dutch national flag
 from typing import List
 
-
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         """j
