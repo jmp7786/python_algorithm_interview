@@ -12,6 +12,6 @@ class Solution:
             # 이진 검색으로 일치 여부 판별
             i2 = bisect.bisect_left(nums2, n1)
             if len(nums2) > 0 and len(nums2) > i2 and n1 == nums2[i2]:
-                result.add(n1)
+                self.add = result.add(n1)
 
         return result
