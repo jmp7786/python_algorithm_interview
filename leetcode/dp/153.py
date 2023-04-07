@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/maximum-product-subarray/
 # 아름다운 알고리즘이다.
+# 잘 풀었다. April 7, 2023 Friday
 from typing import List
 
 

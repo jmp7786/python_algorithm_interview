@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/triangle/description/
-
+# 풀었는데 속도가 너무 느리네? print()가 들어감 April 7, 2023 Friday
 from functools import lru_cache
 from typing import List
 

@@ -2,7 +2,10 @@
 # 96번 문제는 같은 경우의 경우의 수를 찾는 문제이고 이건 경로를 다 찾는 문제이다.
 # BF로 풀어도 된다. -> 제약 조건이 매우 작게 되어있음
 # 문제에서 TreeNode를 주는지 확인해야 한다. return을 배열로 하는 건지 node로 하는 건지 알 수 있음
-# 문제를 제대로 알 수 있다. BFS를 통해서 TreeNode를 만드는 일은 그리 어렵지 않다. 
+# 문제를 제대로 알 수 있다. BFS를 통해서 TreeNode를 만드는 일은 그리 어렵지 않다.
+
+# 연상이 잘 안된다. 복습하도록 하자. April 7, 2023 Friday
+
 from functools import lru_cache
 from typing import List, Optional
 

@@ -1,6 +1,8 @@
 # https://leetcode.com/problems/house-robber
 # 213 형제 문제
 # 할줄만 알면 아주 쉽다.
+# 문제 품 April 7, 2023 Friday
+
 from typing import List
 
 

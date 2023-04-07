@@ -2,6 +2,8 @@
 # 복습할 것 April 6, 2023 Thursday
 # memoization의 적다 tabulation이 어울리는 문제다.
 # rob은 좀 어렵네
+# 잘 풀었다. April 7, 2023 Friday
+
 from typing import List
 
 

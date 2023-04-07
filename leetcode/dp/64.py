@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/minimum-path-sum/
 from typing import List
 # 역시 memoization의 코드가 훨씬 깔끔하다. 속도는 약간 느림 가독성도 좋으므로 memoization으로 연습하자.
+# tabulation으로 풀이 완료 April 7, 2023 Friday tabulation이 더 직관적으로 보인다.
 
 
 #tabulation
