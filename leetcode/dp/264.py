@@ -13,3 +13,22 @@ class Solution:
         return nums[-1]
 
 print(True+ 1)
+
+
+class Solution:
+    def nthSuperUglyNumber(self, n: int, primes: List[int]) -> int:
+        dp = [1] * n
+        numbers = [1] * len(primes)
+        primes_n = len(primes)
+        for i in range(1, n):
+            print(dp, i)
+            print([primes[i] ** numbers[i] for i in range(primes_n)], numbers)
+            dp[i] = min([primes[i] ** numbers[i] for i in range(primes_n)])
+            for j in range(primes_n-1, -1, -1):
+                if primes[j] ** numbers[j]  == dp[i]:
+                    numbers[j] += 1
+                    break
+
+        print(numbers, dp)
+
+        return dp[-1]

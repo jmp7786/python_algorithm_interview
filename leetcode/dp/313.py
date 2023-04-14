@@ -5,11 +5,12 @@ from typing import List
 
 class Solution:
     def nthSuperUglyNumber(self, n: int, primes: List[int]) -> int:
-        cand = [(p, p, 1) for p in primes]
-        ugly = [1]
-        for _ in range(n-1):
-            ugly.append(cand[0][0])
-            while cand[0][0] == ugly[-1]:
-                x, p, i = heapq.heappop(cand)
-                heapq.heappush(cand, (p*ugly[i], p, i+1))
-        return ugly[-1]
+        k = len(primes)
+        starts, nums = [0] * k, [1]
+        for i in range(n - 1):
+            candidates = [primes[j] * nums[starts[j]] for j in range(k)]
+            new_num = min(candidates)
+            nums.append(new_num)
+            starts = [starts[i] + (candidates[i] == new_num) for i in range(k)]
+
+        return nums[-1]
